@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Snakes And Ladder</title>
+    <link rel="stylesheet" href="css/game.css"/>
+    <script src="js/lib/PowerJS.js"></script>
+</head>
+<body>
+
+<div class="screen box-size">
+    <div class="board">
+        <div class="inflate"></div>
+        <div class="board-container">
+            <!--grid here-->
+        </div>
+        <div class="snakes-container">
+            <div class="snake snake1"></div>
+            <div class="snake snake2"></div>
+            <div class="snake snake3"></div>
+            <div class="snake snake4"></div>
+        </div>
+        <div class="ladders-container">
+            <div class="ladder ladder1"></div>
+            <div class="ladder ladder2"></div>
+            <div class="ladder ladder3"></div>
+            <div class="ladder ladder4"></div>
+        </div>
+        <div class="players-container">
+            <!--players here-->
+        </div>
+    </div>
+
+</div>
+
+<div id="templates">
+
+    <div data-id="player"  class="player box-size" data-ref="player" ></div>
+
+    <ul  data-id="row" class="row box-size" data-ref="row" ></ul>
+
+    <li data-id="col" class="col box-size" data-ref="col"></li>
+
+    <div data-id="detailsWindow" class="details-window" data-ref="detailsWindow">
+        <div class="info" data-ref="info">Some TExt</div>
+        <a class="dice" data-ref="dice" href="#">ROLL</a>
+    </div>
+
+</div>
+
+</body>
+<!--libs-->
+<script src="js/view/TemplateManager.js"></script>
+<script src="js/view/DOMMan.js"></script>
+<!--model-->
+<script src="js/model/GameData.js"></script>
+<!--view-->
+<script src="js/view/view.js"></script>
+<!--controller-->
+<script src="js/controller/GameController.js"></script>
+</html>
